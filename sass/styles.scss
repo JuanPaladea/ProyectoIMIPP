@@ -1,3 +1,8 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+
 .logo-imipp {
     height: 50px;
     width: auto;
@@ -21,27 +26,26 @@
         display: inline-block;
     }
 }
-
-p {
-    margin: 0;
-}
-
 main {
     height: 20vh;
     background-color: gray;
 }
 
 .footer {
-    background-color: cyan;
+    background-color: $--primary-color;
+}
+
+.item-footer {
+    display: flex;
 }
 
 .copyright {
-    background-color: gray;
+    background-color: $--divider-color;
 }
 
-.mapa, .lista-footer {
-    height: 25vh;
-    margin: 75px;
+.mapa-footer {
+    width: 100vw;
+    height: 30vh;
 }
 
 .instagram-logo {
