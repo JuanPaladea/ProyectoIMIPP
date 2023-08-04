@@ -3,22 +3,47 @@
   width: auto;
 }
 
+.logo-imipp-footer {
+  height: 50px;
+  width: auto;
+}
+
 .navbar-nav > * {
   margin: 0 5px;
 }
 
+.barra {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .barra {
+    display: inline-block;
+  }
+}
 p {
   margin: 0;
 }
 
 main {
-  height: 80vh;
+  height: 20vh;
+  background-color: gray;
 }
 
-.lista-footer {
+.footer {
   background-color: cyan;
 }
 
 .copyright {
   background-color: gray;
+}
+
+.mapa, .lista-footer {
+  height: 25vh;
+  margin: 75px;
+}
+
+.instagram-logo {
+  height: 16px;
+  width: auto;
 }/*# sourceMappingURL=styles.css.map */
