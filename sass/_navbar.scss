@@ -1,0 +1,42 @@
+.navbar {
+    box-shadow: 0px 10px 22px 0px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    .logo-imipp {
+        height: 50px;
+        width: auto;
+    }
+    .navbar-nav {
+        > * {
+        margin: 0 5px;
+        }
+        .barra {
+            display: none;
+            color: $--primary-color;
+        }
+        .nav-link {
+            color: $--primary-color !important;
+            &:hover {
+                color: $--dark-primary-color !important;
+            }
+        }
+        .dropdown-item {
+            color: $--primary-color;
+            &:hover {
+                color: $--dark-primary-color;
+            }
+        }
+    } 
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        .navbar-nav {
+            .barra {
+                display: inline-block;
+            }
+        }
+    }
+    }

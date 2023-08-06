@@ -1,0 +1,5 @@
+.header {
+    height: 90vh;
+    background-image: url(../assets/img/header.jpg);
+    @include background-image (no-repeat, cover, center)
+}

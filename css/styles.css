@@ -13,52 +13,96 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-family: "Roboto", sans-serif;
 }
 
-.logo-imipp {
+.active {
+  font-weight: bold;
+}
+
+.navbar {
+  box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+}
+.navbar .logo-imipp {
   height: 50px;
   width: auto;
 }
-
-.logo-imipp-footer {
-  height: 50px;
-  width: auto;
-}
-
-.navbar-nav > * {
+.navbar .navbar-nav > * {
   margin: 0 5px;
 }
-
-.barra {
+.navbar .navbar-nav .barra {
   display: none;
+  color: #0695d6;
+}
+.navbar .navbar-nav .nav-link {
+  color: #0695d6 !important;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #1976D2 !important;
+}
+.navbar .navbar-nav .dropdown-item {
+  color: #0695d6;
+}
+.navbar .navbar-nav .dropdown-item:hover {
+  color: #1976D2;
 }
 
 @media screen and (min-width: 992px) {
-  .barra {
+  .navbar .navbar-nav .barra {
     display: inline-block;
   }
 }
-main {
-  height: 20vh;
-  background-color: gray;
+.header {
+  height: 90vh;
+  background-image: url(../assets/img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .footer {
-  background-color: #0695d6;
+  box-shadow: 0px -10px 22px 0px rgba(0, 0, 0, 0.3);
 }
-
-.item-footer {
+.footer .logo-imipp-footer-container {
+  text-align: center;
+}
+.footer .logo-imipp-footer-container .logo-imipp-footer {
+  height: 75px;
+  width: auto;
+  margin: 16px;
+}
+.footer .lista-mapa .lista-footer {
+  margin: 0 auto;
+}
+.footer .lista-mapa .lista-footer .item-footer {
+  margin: 15px 0;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer .lista-mapa .lista-footer .item-footer > p {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+.footer .lista-mapa .lista-footer .item-footer > i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 0;
+}
+.footer .lista-mapa .lista-footer .item-footer .instagram-logo {
+  height: 20px;
+  width: auto;
+}
+.footer .lista-mapa .mapa-container {
+  margin: 0 auto;
+}
+.footer .lista-mapa .mapa-container .mapa-footer {
+  height: 30vh;
+  width: 100%;
+  margin: 25px 0;
 }
 
 .copyright {
   background-color: #BDBDBD;
-}
-
-.mapa-footer {
-  width: 100vw;
-  height: 30vh;
-}
-
-.instagram-logo {
-  height: 16px;
-  width: auto;
 }/*# sourceMappingURL=styles.css.map */

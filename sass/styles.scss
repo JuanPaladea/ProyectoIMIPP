@@ -2,53 +2,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "fonts.scss";
-
-.logo-imipp {
-    height: 50px;
-    width: auto;
-}
-
-.logo-imipp-footer {
-    height: 50px;
-    width: auto;
-}
-
-.navbar-nav > * {
-    margin: 0 5px;
-}
-
-.barra {
-    display: none;
-}
-
-@media screen and (min-width: 992px) {
-    .barra {
-        display: inline-block;
-    }
-}
-main {
-    height: 20vh;
-    background-color: gray;
-}
-
-.footer {
-    background-color: $--primary-color;
-}
-
-.item-footer {
-    display: flex;
-}
-
-.copyright {
-    background-color: $--divider-color;
-}
-
-.mapa-footer {
-    width: 100vw;
-    height: 30vh;
-}
-
-.instagram-logo {
-    height: 16px;
-    width: auto;
-}
+@import "utilites.scss";
+@import "navbar.scss";
+@import "header.scss";
+@import "footer.scss";
