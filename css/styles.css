@@ -57,8 +57,29 @@ h1, h2, h3, h4, h5, h6, p, a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header .titulo {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  padding: 1rem;
+  text-align: center;
+}
+.header .titulo h1 {
+  font-size: 2rem;
+}
+.header .titulo h2 {
+  font-size: 1.2rem;
 }
 
+@media screen and (min-width: 992px) {
+  .header .titulo {
+    margin-right: 35vw;
+  }
+}
 .footer {
   box-shadow: 0px -10px 22px 0px rgba(0, 0, 0, 0.3);
 }
@@ -105,4 +126,19 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .copyright {
   background-color: #BDBDBD;
+}
+
+.el-imipp {
+  margin: 1rem 0;
+  text-align: justify;
+}
+.el-imipp h3 {
+  margin: 1rem 0;
+}
+.el-imipp .el-imipp-img {
+  margin: 1rem 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60vh;
 }/*# sourceMappingURL=styles.css.map */

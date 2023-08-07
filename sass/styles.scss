@@ -6,3 +6,21 @@
 @import "navbar.scss";
 @import "header.scss";
 @import "footer.scss";
+
+// * {
+//     border: 1px red solid;
+// }
+
+.el-imipp {
+    margin: 1rem 0;
+    text-align: justify;
+    h3 {
+        margin: 1rem 0;
+    }
+    .el-imipp-img {
+        margin: 1rem 0;
+        width: 100%;
+        object-fit: cover;
+        height: 60vh;
+    }
+}

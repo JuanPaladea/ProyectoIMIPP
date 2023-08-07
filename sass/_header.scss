@@ -1,5 +1,26 @@
 .header {
     height: 90vh;
     background-image: url(../assets/img/header.jpg);
-    @include background-image (no-repeat, cover, center)
+    @include background-image (no-repeat, cover, center);
+    @include display-flex(row, center, center);
+    .titulo {
+        background-color: $--bg-opaco;
+        color: $--light-text-color;
+        padding: 1rem;
+        text-align: center;
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        .titulo {
+            margin-right: 35vw;
+        }
+    }
 }
