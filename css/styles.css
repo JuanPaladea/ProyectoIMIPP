@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .navbar {
-  box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
 }
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .header {
   height: 90vh;
   background-image: url(../assets/img/header.jpg);
+  box-shadow: 0px 3px 22px 0px rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -85,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 }
 .footer {
-  box-shadow: 0px -10px 22px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px -5px 22px 0px rgba(0, 0, 0, 0.2);
 }
 .footer .logo-imipp-footer-container {
   text-align: center;
@@ -145,4 +146,5 @@ h1, h2, h3, h4, h5, h6, p, a {
   -o-object-fit: cover;
      object-fit: cover;
   height: 60vh;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=styles.css.map */
