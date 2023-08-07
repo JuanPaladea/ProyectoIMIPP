@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   position: sticky;
   top: 0;
 }
+.navbar .navbar-toggler {
+  color: #0695d6;
+  border: 2px solid #0695d6;
+}
 .navbar .logo-imipp {
   height: 50px;
   width: auto;
@@ -37,13 +41,13 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: #0695d6 !important;
 }
 .navbar .navbar-nav .nav-link:hover {
-  color: #1976D2 !important;
+  color: #1976d2 !important;
 }
 .navbar .navbar-nav .dropdown-item {
   color: #0695d6;
 }
 .navbar .navbar-nav .dropdown-item:hover {
-  color: #1976D2;
+  color: #1976d2;
 }
 
 @media screen and (min-width: 992px) {
@@ -63,7 +67,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   justify-content: center;
 }
 .header .titulo {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(25, 118, 210, 0.6);
   color: #FFFFFF;
   padding: 1rem;
   text-align: center;
