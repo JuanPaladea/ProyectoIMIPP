@@ -5,23 +5,5 @@
 @import "utilites.scss";
 @import "navbar.scss";
 @import "header.scss";
+@import "main-index.scss";
 @import "footer.scss";
-
-// * {
-//     border: 1px red solid;
-// }
-
-.el-imipp {
-    margin: 1rem 0;
-    text-align: justify;
-    h3 {
-        margin: 1rem 0;
-    }
-    .el-imipp-img {
-        margin: 1rem 0;
-        width: 100%;
-        object-fit: cover;
-        height: 60vh;
-        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
-    }
-}
