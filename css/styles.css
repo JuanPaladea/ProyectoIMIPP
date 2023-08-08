@@ -9,7 +9,7 @@ p {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, li {
   font-family: "Roboto", sans-serif;
 }
 
@@ -17,10 +17,24 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-weight: bold;
 }
 
+.subrayar {
+  text-decoration: underline;
+  text-decoration-color: #1976d2;
+  text-decoration-thickness: 3px;
+}
+
+.resaltar {
+  background-color: #BBDEFB;
+}
+
 .navbar {
-  box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
+}
+.navbar .navbar-toggler {
+  color: #0695d6;
+  border: 2px solid #0695d6;
 }
 .navbar .logo-imipp {
   height: 50px;
@@ -37,13 +51,13 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: #0695d6 !important;
 }
 .navbar .navbar-nav .nav-link:hover {
-  color: #1976D2 !important;
+  color: #1976d2 !important;
 }
 .navbar .navbar-nav .dropdown-item {
   color: #0695d6;
 }
 .navbar .navbar-nav .dropdown-item:hover {
-  color: #1976D2;
+  color: #1976d2;
 }
 
 @media screen and (min-width: 992px) {
@@ -54,6 +68,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .header {
   height: 90vh;
   background-image: url(../assets/img/header.jpg);
+  box-shadow: 0px 3px 22px 0px rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -63,7 +78,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   justify-content: center;
 }
 .header .titulo {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(25, 118, 210, 0.6);
   color: #FFFFFF;
   padding: 1rem;
   text-align: center;
@@ -80,8 +95,37 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-right: 35vw;
   }
 }
+@media screen and (max-width: 992px) {
+  .header {
+    background-position: left;
+  }
+}
+.el-imipp {
+  margin: 1rem 0;
+  text-align: justify;
+  line-height: 2rem;
+}
+.el-imipp h3 {
+  margin: 1rem 0;
+}
+.el-imipp .el-imipp-img {
+  margin: 1rem 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60vh;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.objetivos {
+  line-height: 2rem;
+}
+.objetivos h3 {
+  margin: 1rem 0;
+}
+
 .footer {
-  box-shadow: 0px -10px 22px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px -5px 22px 0px rgba(0, 0, 0, 0.2);
 }
 .footer .logo-imipp-footer-container {
   text-align: center;
@@ -101,9 +145,14 @@ h1, h2, h3, h4, h5, h6, p, a {
   align-items: center;
   justify-content: flex-start;
 }
-.footer .lista-mapa .lista-footer .item-footer > p {
+.footer .lista-mapa .lista-footer .item-footer > p, .footer .lista-mapa .lista-footer .item-footer a {
+  color: #212121;
+  text-decoration: none;
   margin-left: 10px;
   font-size: 1.2rem;
+}
+.footer .lista-mapa .lista-footer .item-footer > a:hover {
+  text-decoration: underline;
 }
 .footer .lista-mapa .lista-footer .item-footer > i {
   width: 20px;
@@ -126,19 +175,4 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .copyright {
   background-color: #BDBDBD;
-}
-
-.el-imipp {
-  margin: 1rem 0;
-  text-align: justify;
-}
-.el-imipp h3 {
-  margin: 1rem 0;
-}
-.el-imipp .el-imipp-img {
-  margin: 1rem 0;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 60vh;
 }/*# sourceMappingURL=styles.css.map */

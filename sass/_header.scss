@@ -1,6 +1,7 @@
 .header {
     height: 90vh;
     background-image: url(../assets/img/header.jpg);
+    box-shadow: 0px 3px 22px 0px rgba(0,0,0,0.2);
     @include background-image (no-repeat, cover, center);
     @include display-flex(row, center, center);
     .titulo {
@@ -22,5 +23,11 @@
         .titulo {
             margin-right: 35vw;
         }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        background-position: left;
     }
 }
