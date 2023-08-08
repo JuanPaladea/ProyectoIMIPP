@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   }
 }
 .el-imipp {
-  margin: 1rem 0;
+  padding: 2rem;
   text-align: justify;
   line-height: 2rem;
 }
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 
 .objetivos {
-  margin: 1rem 0;
+  padding: 2rem;
   text-align: justify;
   line-height: 2rem;
 }
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 
 .lineas-investigacion {
-  margin: 1rem 0;
+  padding: 2rem;
   text-align: justify;
   line-height: 2rem;
 }
@@ -183,8 +183,4 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 .copyright {
   background-color: #BDBDBD;
-}
-
-* {
-  border: 1px red solid;
 }/*# sourceMappingURL=styles.css.map */
