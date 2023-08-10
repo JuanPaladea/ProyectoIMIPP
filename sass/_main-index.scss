@@ -1,5 +1,4 @@
 .el-imipp {
-    padding: 5rem;
     text-align: justify;
     line-height: 2rem;
     .el-imipp-texto {
@@ -8,7 +7,6 @@
         }
     }
     .el-imipp-img {
-        margin: 1rem 0;
         width: 100%;
         object-fit: cover;
         height: 60vh;
@@ -16,43 +14,23 @@
     }
 }
 
-@media screen and (max-width: 992px) {
-    .el-imipp {
-        padding: 1rem;
-    }
-}
-
-
 .objetivos {
-    padding: 2rem;
     text-align: justify;
     line-height: 2rem;
     background-color: $--dark-primary-color;
     color: $--light-text-color;
     h3 {
-        margin-bottom: 1rem;
         font-size: 2rem;
     }
     .objetivos-container {
-        margin: 2rem;
-        font-size: 1.2rem;
-        border: 6px solid $--light-primary-color;
+        font-size: 1rem;
         background-color: $--light-text-color;
         color: $--dark-text-color;
-        border-radius: 20px;
-        .objetivos-numero {
-            color: $--dark-text-color;
-            background-color: $--light-primary-color;
-            border-radius: 20px;
-            font-size: 2rem;
-            position: relative;
-            bottom: 25px;
-        }
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
     }
 }
 
 .lineas-investigacion {
-    padding: 2rem;
     text-align: justify;
     line-height: 2rem;
 }

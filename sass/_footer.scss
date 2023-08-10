@@ -10,7 +10,6 @@
     }
     .lista-mapa {
         .lista-footer {
-            margin: 0 auto;
             .item-footer {
                 margin: 15px 0;
                 @include display-flex(row, center, flex-start);
@@ -38,11 +37,9 @@
             }            
         }
         .mapa-container {
-            margin: 0 auto;
             .mapa-footer {
                 height: 30vh;
                 width: 100%;
-                margin: 25px 0;
             }
         }
     }

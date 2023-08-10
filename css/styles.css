@@ -104,7 +104,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   }
 }
 .el-imipp {
-  padding: 5rem;
   text-align: justify;
   line-height: 2rem;
 }
@@ -112,7 +111,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   margin: 1rem 0;
 }
 .el-imipp .el-imipp-img {
-  margin: 1rem 0;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -120,41 +118,23 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 992px) {
-  .el-imipp {
-    padding: 1rem;
-  }
-}
 .objetivos {
-  padding: 2rem;
   text-align: justify;
   line-height: 2rem;
   background-color: #1976d2;
   color: #FFFFFF;
 }
 .objetivos h3 {
-  margin-bottom: 1rem;
   font-size: 2rem;
 }
 .objetivos .objetivos-container {
-  margin: 2rem;
-  font-size: 1.2rem;
-  border: 6px solid #BBDEFB;
+  font-size: 1rem;
   background-color: #FFFFFF;
   color: #212121;
-  border-radius: 20px;
-}
-.objetivos .objetivos-container .objetivos-numero {
-  color: #212121;
-  background-color: #BBDEFB;
-  border-radius: 20px;
-  font-size: 2rem;
-  position: relative;
-  bottom: 25px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .lineas-investigacion {
-  padding: 2rem;
   text-align: justify;
   line-height: 2rem;
 }
@@ -169,9 +149,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   height: 75px;
   width: auto;
   margin: 16px;
-}
-.footer .lista-mapa .lista-footer {
-  margin: 0 auto;
 }
 .footer .lista-mapa .lista-footer .item-footer {
   margin: 15px 0;
@@ -199,13 +176,9 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   height: 20px;
   width: auto;
 }
-.footer .lista-mapa .mapa-container {
-  margin: 0 auto;
-}
 .footer .lista-mapa .mapa-container .mapa-footer {
   height: 30vh;
   width: 100%;
-  margin: 25px 0;
 }
 
 .copyright {
