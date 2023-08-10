@@ -1,9 +1,8 @@
 .el-imipp {
-    padding: 2rem;
+    padding: 5rem;
     text-align: justify;
     line-height: 2rem;
     .el-imipp-texto {
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
         h3 {
             margin: 1rem 0;
         }
@@ -17,10 +16,19 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    .el-imipp {
+        padding: 1rem;
+    }
+}
+
+
 .objetivos {
     padding: 2rem;
     text-align: justify;
     line-height: 2rem;
+    background-color: $--dark-primary-color;
+    color: $--light-text-color;
     h3 {
         margin-bottom: 1rem;
         font-size: 2rem;
@@ -29,8 +37,8 @@
         margin: 2rem;
         font-size: 1.2rem;
         border: 6px solid $--light-primary-color;
-        background-color: $--dark-primary-color;
-        color: $--light-text-color;
+        background-color: $--light-text-color;
+        color: $--dark-text-color;
         border-radius: 20px;
         .objetivos-numero {
             color: $--dark-text-color;
