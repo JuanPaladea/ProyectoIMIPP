@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 
 .navbar {
+  z-index: 2;
   padding: 0.5rem 1rem;
   box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.2);
   position: sticky;
@@ -121,17 +122,90 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .objetivos {
   text-align: justify;
   line-height: 2rem;
-  background-color: #1976d2;
-  color: #FFFFFF;
 }
 .objetivos h3 {
   font-size: 2rem;
-}
-.objetivos .objetivos-container {
-  font-size: 1rem;
-  background-color: #FFFFFF;
   color: #212121;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.objetivos .olcards {
+  list-style: none;
+  counter-reset: cardCount;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  --cardsGap: 1rem;
+  gap: var(--cardsGap);
+  padding-bottom: var(--cardsGap);
+  z-index: 1;
+}
+.objetivos .olcards li {
+  counter-increment: cardCount;
+  display: flex;
+  color: #FFFFFF;
+  --labelOffset: 1rem;
+  --arrowClipSize: 1.5rem;
+  margin-top: var(--labelOffset);
+}
+.objetivos .olcards li::before {
+  content: counter(cardCount, decimal-leading-zero);
+  background: #BBDEFB;
+  color: #1976d2;
+  font-size: 2em;
+  font-weight: 700;
+  transform: translateY(calc(-1 * var(--labelOffset)));
+  margin-right: calc(-1 * var(--labelOffset));
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 0.5em;
+  height: 3rem;
+}
+.objetivos .olcards li .content {
+  background-color: #1976d2;
+  --inlinePadding: 1em;
+  --boxPadding: 0.5em;
+  display: grid;
+  padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize)) var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
+  grid-template-areas: "icon title" "icon text";
+  gap: 0.25em 1em;
+  -webkit-clip-path: polygon(0 0, calc(100% - var(--arrowClipSize)) 0, 100% 50%, calc(100% - var(--arrowClipSize)) 100%, calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)), 0 calc(100% + var(--cardsGap)));
+          clip-path: polygon(0 0, calc(100% - var(--arrowClipSize)) 0, 100% 50%, calc(100% - var(--arrowClipSize)) 100%, calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)), 0 calc(100% + var(--cardsGap)));
+  position: relative;
+}
+.objetivos .olcards li .content .icon {
+  grid-area: icon;
+  align-self: center;
+  font-size: 2em;
+}
+.objetivos .olcards li .content .title {
+  grid-area: title;
+  font-size: 1.25em;
+  /* font-weight: 700; */
+}
+.objetivos .olcards li .content .text {
+  grid-area: text;
+}
+.objetivos .olcards li .content::before {
+  content: "";
+  position: absolute;
+  width: var(--labelOffset);
+  height: var(--labelOffset);
+  background: #1976d2;
+  left: 0;
+  bottom: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 0 100%);
+  filter: brightness(0.75);
+}
+.objetivos .olcards li .content::after {
+  content: "";
+  position: absolute;
+  height: var(--cardsGap);
+  width: var(--cardsGap);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.25), transparent 50%);
+  left: 0;
+  top: 100%;
 }
 
 .lineas-investigacion {
