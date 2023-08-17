@@ -1,8 +1,17 @@
+.el-imipp-header {
+    font-size: 2.5rem;
+}
+
 .el-imipp {
     text-align: justify;
     line-height: 2rem;
     .el-imipp-texto {
+        font-weight: 500;
+        p {
+            padding-bottom: 10px;
+        }
         h3 {
+            font-size: 1.5rem;
             margin: 1rem 0;
         }
     }

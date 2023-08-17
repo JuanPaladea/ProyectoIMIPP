@@ -2,6 +2,12 @@
     font-weight: bold;
 }
 
+.line {
+    height: 1px;
+    border-bottom: 2px solid black;
+    margin: 10px 0;
+}
+
 .subrayar {
     text-decoration: underline;
     text-decoration-color: $--dark-primary-color;

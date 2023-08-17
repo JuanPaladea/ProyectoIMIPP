@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 body {
   box-sizing: border-box;
   margin: 0;
@@ -10,11 +10,17 @@ p, li, ol, ul {
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .active {
   font-weight: bold;
+}
+
+.line {
+  height: 1px;
+  border-bottom: 2px solid black;
+  margin: 10px 0;
 }
 
 .subrayar {
@@ -42,6 +48,9 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   height: 50px;
   width: auto;
 }
+.navbar .navbar-nav .home-icon {
+  padding-right: 10px;
+}
 .navbar .navbar-nav > * {
   margin: 0 5px;
 }
@@ -68,7 +77,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   }
 }
 .header {
-  height: 90vh;
+  height: 70vh;
   background-image: url(../assets/img/header.jpg);
   box-shadow: 0px 3px 22px 0px rgba(0, 0, 0, 0.2);
   background-repeat: no-repeat;
@@ -104,11 +113,22 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     background-position: left;
   }
 }
+.el-imipp-header {
+  font-size: 2.5rem;
+}
+
 .el-imipp {
   text-align: justify;
   line-height: 2rem;
 }
+.el-imipp .el-imipp-texto {
+  font-weight: 500;
+}
+.el-imipp .el-imipp-texto p {
+  padding-bottom: 10px;
+}
 .el-imipp .el-imipp-texto h3 {
+  font-size: 1.5rem;
   margin: 1rem 0;
 }
 .el-imipp .el-imipp-img {
@@ -259,4 +279,8 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   background-color: #1976d2;
   color: #FFFFFF;
   padding: 0 2rem;
+}
+
+* {
+  border: 1px red solid;
 }/*# sourceMappingURL=styles.css.map */
