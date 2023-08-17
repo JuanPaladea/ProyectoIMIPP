@@ -147,85 +147,74 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   font-size: 2rem;
   color: #212121;
 }
-.objetivos .olcards {
+.objetivos ul {
+  overflow: hidden;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 4rem);
   list-style: none;
-  counter-reset: cardCount;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  --cardsGap: 1rem;
-  gap: var(--cardsGap);
-  padding-bottom: var(--cardsGap);
-  z-index: 1;
-}
-.objetivos .olcards li {
-  counter-increment: cardCount;
-  display: flex;
-  color: #FFFFFF;
-  --labelOffset: 1rem;
-  --arrowClipSize: 1.5rem;
-  margin-top: var(--labelOffset);
-}
-.objetivos .olcards li::before {
-  content: counter(cardCount, decimal-leading-zero);
-  background: #BBDEFB;
-  color: #1976d2;
-  font-size: 2em;
-  font-weight: 700;
-  transform: translateY(calc(-1 * var(--labelOffset)));
-  margin-right: calc(-1 * var(--labelOffset));
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 0.5em;
-  height: 3rem;
-}
-.objetivos .olcards li .content {
-  background-color: #1976d2;
-  --inlinePadding: 1em;
-  --boxPadding: 0.5em;
+  perspective: 1000px;
   display: grid;
-  padding: var(--boxPadding) calc(var(--inlinePadding) + var(--arrowClipSize)) var(--boxPadding) calc(var(--inlinePadding) + var(--labelOffset));
-  grid-template-areas: "icon title" "icon text";
-  gap: 0.25em 1em;
-  -webkit-clip-path: polygon(0 0, calc(100% - var(--arrowClipSize)) 0, 100% 50%, calc(100% - var(--arrowClipSize)) 100%, calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)), 0 calc(100% + var(--cardsGap)));
-          clip-path: polygon(0 0, calc(100% - var(--arrowClipSize)) 0, 100% 50%, calc(100% - var(--arrowClipSize)) 100%, calc(100% - var(--arrowClipSize)) calc(100% + var(--cardsGap)), 0 calc(100% + var(--cardsGap)));
+  row-gap: 0.5rem;
+}
+.objetivos ul li.card {
+  text-align: center;
   position: relative;
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+  background-color: #1976d2;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), transparent);
+  transform-style: preserve-3d;
+  color: #FFFFFF;
+  display: grid;
+  grid-template: "icon" "title" "content";
+  row-gap: 0.5rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
-.objetivos .olcards li .content .icon {
+.objetivos ul li.card:before {
+  --side-rotate: 60deg;
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: calc(50% - 50% * var(--ry)) 50%;
+  transform: rotateY(calc(var(--side-rotate) * var(--ry)));
+  background-color: inherit;
+  background-image: linear-gradient(calc(90deg * var(--ry)), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
+  --ry: -1;
+  right: 100%;
+}
+.objetivos ul li.card:after {
+  --side-rotate: 60deg;
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: calc(50% - 50% * var(--ry)) 50%;
+  transform: rotateY(calc(var(--side-rotate) * var(--ry)));
+  background-color: inherit;
+  background-image: linear-gradient(calc(90deg * var(--ry)), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
+  --ry: 1;
+  left: 100%;
+}
+.objetivos ul li.card .icon {
   grid-area: icon;
-  align-self: center;
-  font-size: 2em;
+  display: grid;
+  place-items: center;
 }
-.objetivos .olcards li .content .title {
+.objetivos ul li.card .icon i {
+  font-size: 2rem;
+}
+.objetivos ul li.card .title {
   grid-area: title;
-  font-size: 1.25em;
-  /* font-weight: 700; */
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
 }
-.objetivos .olcards li .content .text {
-  grid-area: text;
-}
-.objetivos .olcards li .content::before {
-  content: "";
-  position: absolute;
-  width: var(--labelOffset);
-  height: var(--labelOffset);
-  background: #1976d2;
-  left: 0;
-  bottom: 0;
-  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 0 100%);
-  filter: brightness(0.75);
-}
-.objetivos .olcards li .content::after {
-  content: "";
-  position: absolute;
-  height: var(--cardsGap);
-  width: var(--cardsGap);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.25), transparent 50%);
-  left: 0;
-  top: 100%;
+.objetivos ul li.card .content {
+  grid-area: content;
 }
 
 .lineas-investigacion {
