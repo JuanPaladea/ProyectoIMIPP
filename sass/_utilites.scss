@@ -8,6 +8,12 @@
     margin: 10px 0;
 }
 
+@media screen and (min-width: 992px) {
+    .escondida {
+        display: none;
+    }
+}
+
 .subrayar {
     text-decoration: underline;
     text-decoration-color: $--dark-primary-color;

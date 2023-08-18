@@ -23,83 +23,73 @@
     }
 }
 
-
-.objetivos {
-    text-align: justify;
-    line-height: 2rem;
-    h3 {
-        font-size: 2rem;
-        color: $--dark-text-color;
-    }
-    ul {
-        overflow: hidden;
-        margin-inline: auto;
-        padding-inline: clamp(1rem, 5vw, 4rem);
-        list-style: none;
-        perspective: 1000px;
-        display: grid;
-        row-gap: 0.5rem;
-        li.card {
-            text-align: center;
-            position: relative;
-            padding-block: 1.5rem;
-            padding-inline: 2rem;
-            background-color: $--dark-primary-color;
-            background-image: linear-gradient(to right, rgb(0 0 0 / .15), transparent);
-            transform-style: preserve-3d;
-            color: $--light-text-color;
-            display: grid;
-            grid-template: 'icon' 'title' 'content';
-            row-gap: 0.5rem;
-            column-gap: 2rem;
-            &:before {
-                --side-rotate: 60deg;
-                content: "";
-                position: absolute;
-                top: 0;
-                height: 100%;
-                width: 100%;
-                transform-origin: calc(50% - (50% * var(--ry))) 50%  ;
-                transform: rotateY(calc(var(--side-rotate) * var(--ry)));
-                background-color: inherit;
-                background-image: linear-gradient(calc(90deg * var(--ry)), rgb(0 0 0 / .25), rgb(0 0 0 / .5)); 
-                --ry: -1; right: 100%;
-            }
-            &:after {
-                --side-rotate: 60deg;
-                content: "";
-                position: absolute;
-                top: 0;
-                height: 100%;
-                width: 100%;
-                transform-origin: calc(50% - (50% * var(--ry))) 50%  ;
-                transform: rotateY(calc(var(--side-rotate) * var(--ry)));
-                background-color: inherit;
-                background-image: linear-gradient(calc(90deg * var(--ry)), rgb(0 0 0 / .25), rgb(0 0 0 / .5));  
-                --ry: 1; left: 100%;
-            }
-            .icon {
-                grid-area: icon;
-                display: grid;
-                place-items: center;
-                i {
-                    font-size: 2rem;
-                }
-            }
-            .title {
-                grid-area: title;
-                font-size: 1.25rem;
-                font-weight: 700;
-                text-align: center;
-            }
-            .content {
-                grid-area: content;
-            }
+@media screen and (min-width: 992px) {
+    .el-imipp {
+        .el-imipp-img-container {
+            padding: 25px;
         }
     }
 }
 
-.lineas-investigacion {
-    text-align: justify;
-    line-height: 2rem;
+.servicios {
+    margin-bottom: 75px;
+    .carta-servicios {
+        height: 100%;
+        padding: 0;
+        border: 1px solid $--dark-text-color;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 30%;
+            object-fit: cover;
+            border-right: 2px solid $--dark-text-color;
+        }
+        .carta-texto {
+            text-align: justify;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h5 {
+                font-weight: 600;
+            }
+        }
+        .btn {
+            width: fit-content;
+        }
+    }
+}
+
+.objetivos {
+    margin-bottom: 75px;
+}
+
+
+.carta-index {
+    height: 100%;
+    padding: 0;
+    border: 1px solid $--dark-text-color;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+        border-bottom: 2px solid $--dark-text-color;
+    }
+    .carta-texto {
+        text-align: justify;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h5 {
+            font-weight: 600;
+        }
+    }
+    .btn {
+        width: fit-content;
+    }
 }

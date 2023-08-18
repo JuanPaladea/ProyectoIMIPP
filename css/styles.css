@@ -23,6 +23,11 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   margin: 10px 0;
 }
 
+@media screen and (min-width: 992px) {
+  .escondida {
+    display: none;
+  }
+}
 .subrayar {
   text-decoration: underline;
   text-decoration-color: #1976d2;
@@ -36,9 +41,9 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .navbar {
   z-index: 2;
   padding: 0.5rem 1rem;
-  box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
+  border-bottom: 1px solid #212121;
 }
 .navbar .navbar-toggler {
   color: #0695d6;
@@ -104,6 +109,9 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 
 @media screen and (min-width: 992px) {
+  .header {
+    margin: 50px 100px;
+  }
   .header .titulo {
     margin-right: 35vw;
   }
@@ -139,99 +147,80 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 992px) {
+  .el-imipp .el-imipp-img-container {
+    padding: 25px;
+  }
+}
+.servicios {
+  margin-bottom: 75px;
+}
+.servicios .carta-servicios {
+  height: 100%;
+  padding: 0;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.servicios .carta-servicios img {
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-right: 2px solid #212121;
+}
+.servicios .carta-servicios .carta-texto {
+  text-align: justify;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.servicios .carta-servicios .carta-texto h5 {
+  font-weight: 600;
+}
+.servicios .carta-servicios .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .objetivos {
-  text-align: justify;
-  line-height: 2rem;
-}
-.objetivos h3 {
-  font-size: 2rem;
-  color: #212121;
-}
-.objetivos ul {
-  overflow: hidden;
-  margin-inline: auto;
-  padding-inline: clamp(1rem, 5vw, 4rem);
-  list-style: none;
-  perspective: 1000px;
-  display: grid;
-  row-gap: 0.5rem;
-}
-.objetivos ul li.card {
-  text-align: center;
-  position: relative;
-  padding-block: 1.5rem;
-  padding-inline: 2rem;
-  background-color: #1976d2;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), transparent);
-  transform-style: preserve-3d;
-  color: #FFFFFF;
-  display: grid;
-  grid-template: "icon" "title" "content";
-  row-gap: 0.5rem;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-}
-.objetivos ul li.card:before {
-  --side-rotate: 60deg;
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  transform-origin: calc(50% - 50% * var(--ry)) 50%;
-  transform: rotateY(calc(var(--side-rotate) * var(--ry)));
-  background-color: inherit;
-  background-image: linear-gradient(calc(90deg * var(--ry)), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
-  --ry: -1;
-  right: 100%;
-}
-.objetivos ul li.card:after {
-  --side-rotate: 60deg;
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  transform-origin: calc(50% - 50% * var(--ry)) 50%;
-  transform: rotateY(calc(var(--side-rotate) * var(--ry)));
-  background-color: inherit;
-  background-image: linear-gradient(calc(90deg * var(--ry)), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
-  --ry: 1;
-  left: 100%;
-}
-.objetivos ul li.card .icon {
-  grid-area: icon;
-  display: grid;
-  place-items: center;
-}
-.objetivos ul li.card .icon i {
-  font-size: 2rem;
-}
-.objetivos ul li.card .title {
-  grid-area: title;
-  font-size: 1.25rem;
-  font-weight: 700;
-  text-align: center;
-}
-.objetivos ul li.card .content {
-  grid-area: content;
+  margin-bottom: 75px;
 }
 
-.lineas-investigacion {
+.carta-index {
+  height: 100%;
+  padding: 0;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.carta-index img {
+  width: 100%;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom: 2px solid #212121;
+}
+.carta-index .carta-texto {
   text-align: justify;
-  line-height: 2rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carta-index .carta-texto h5 {
+  font-weight: 600;
+}
+.carta-index .btn {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.footer {
-  box-shadow: 0px -5px 22px 0px rgba(0, 0, 0, 0.2);
-}
-.footer .logo-imipp-footer-container {
-  text-align: center;
-}
-.footer .logo-imipp-footer-container .logo-imipp-footer {
+.footer .logo-imipp-footer {
   height: 75px;
   width: auto;
-  margin: 16px;
 }
 .footer .lista-mapa .lista-footer .item-footer {
   margin: 15px 0;
@@ -264,12 +253,13 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  .logo-imipp-footer-container {
+    display: none;
+  }
+}
 .copyright {
   background-color: #1976d2;
   color: #FFFFFF;
   padding: 0 2rem;
-}
-
-* {
-  border: 1px red solid;
 }/*# sourceMappingURL=styles.css.map */
