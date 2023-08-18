@@ -1,3 +1,8 @@
+.mapa-footer {
+    height: 30vh;
+    width: 100%;
+}
+
 .footer {
     .logo-imipp-footer {
         height: 75px;
@@ -31,18 +36,12 @@
                 }
             }            
         }
-        .mapa-container {
-            .mapa-footer {
-                height: 30vh;
-                width: 100%;
-            }
-        }
     }
 }
 
 @media screen and (max-width: 992px) {
     .logo-imipp-footer-container {
-        display: none;
+        text-align: center;
     }
 }
 

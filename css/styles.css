@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #f8f9fa;
 }
 
 p, li, ol, ul {
@@ -19,7 +20,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 .line {
   height: 1px;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   margin: 10px 0;
 }
 
@@ -127,7 +128,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 .el-imipp {
   text-align: justify;
-  line-height: 2rem;
+  line-height: 250%;
 }
 .el-imipp .el-imipp-texto {
   font-weight: 500;
@@ -151,11 +152,15 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   .el-imipp .el-imipp-img-container {
     padding-right: 25px;
     padding-left: 25px;
+    text-align: center;
   }
   .el-imipp .el-imipp-img {
     width: 80%;
     margin: 0 auto;
   }
+}
+.servicios {
+  margin: 20px 0;
 }
 .servicios .carta-servicios {
   height: 100%;
@@ -216,6 +221,15 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   width: fit-content;
 }
 
+.objetivos {
+  line-height: 250%;
+}
+
+.mapa-footer {
+  height: 30vh;
+  width: 100%;
+}
+
 .footer .logo-imipp-footer {
   height: 75px;
   width: auto;
@@ -246,14 +260,10 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   height: 20px;
   width: auto;
 }
-.footer .lista-mapa .mapa-container .mapa-footer {
-  height: 30vh;
-  width: 100%;
-}
 
 @media screen and (max-width: 992px) {
   .logo-imipp-footer-container {
-    display: none;
+    text-align: center;
   }
 }
 .copyright {

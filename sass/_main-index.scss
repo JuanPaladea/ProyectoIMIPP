@@ -4,7 +4,7 @@
 
 .el-imipp {
     text-align: justify;
-    line-height: 2rem;
+    line-height: 250%;
     .el-imipp-texto {
         font-weight: 500;
         p {
@@ -28,6 +28,7 @@
         .el-imipp-img-container {
             padding-right: 25px;
             padding-left: 25px;
+            text-align: center;
         }
         .el-imipp-img {
             width: 80%;
@@ -37,6 +38,7 @@
 }
 
 .servicios {
+    margin: 20px 0;
     .carta-servicios {
         height: 100%;
         padding: 0;
@@ -91,4 +93,8 @@
     .btn {
         width: fit-content;
     }
+}
+
+.objetivos {
+    line-height: 250%;
 }
