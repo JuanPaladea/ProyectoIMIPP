@@ -149,11 +149,13 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 @media screen and (min-width: 992px) {
   .el-imipp .el-imipp-img-container {
-    padding: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
-}
-.servicios {
-  margin-bottom: 75px;
+  .el-imipp .el-imipp-img {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .servicios .carta-servicios {
   height: 100%;
@@ -182,10 +184,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .servicios .carta-servicios .btn {
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.objetivos {
-  margin-bottom: 75px;
 }
 
 .carta-index {

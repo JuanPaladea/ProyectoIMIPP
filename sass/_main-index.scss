@@ -26,13 +26,17 @@
 @media screen and (min-width: 992px) {
     .el-imipp {
         .el-imipp-img-container {
-            padding: 25px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        .el-imipp-img {
+            width: 80%;
+            margin: 0 auto;
         }
     }
 }
 
 .servicios {
-    margin-bottom: 75px;
     .carta-servicios {
         height: 100%;
         padding: 0;
@@ -60,11 +64,6 @@
         }
     }
 }
-
-.objetivos {
-    margin-bottom: 75px;
-}
-
 
 .carta-index {
     height: 100%;
