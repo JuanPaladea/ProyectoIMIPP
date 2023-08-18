@@ -25,9 +25,6 @@
         }
         .nav-link {
             color: $--primary-color !important;
-            &:hover {
-                color: $--dark-primary-color !important;
-            }
         }
         .dropdown-item {
             color: $--primary-color;

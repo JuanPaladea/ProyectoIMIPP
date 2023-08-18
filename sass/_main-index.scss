@@ -18,7 +18,7 @@
     .el-imipp-img {
         width: 100%;
         object-fit: cover;
-        height: 60vh;
+        height: 40vh;
         box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
     }
 }
@@ -28,7 +28,7 @@
         .el-imipp-img-container {
             padding-right: 25px;
             padding-left: 25px;
-            text-align: center;
+            text-align: end;
         }
         .el-imipp-img {
             width: 80%;
@@ -63,6 +63,7 @@
         }
         .btn {
             width: fit-content;
+            margin-top: 50px !important;
         }
     }
 }

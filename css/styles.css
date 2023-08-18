@@ -67,9 +67,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .navbar .navbar-nav .nav-link {
   color: #0695d6 !important;
 }
-.navbar .navbar-nav .nav-link:hover {
-  color: #1976d2 !important;
-}
 .navbar .navbar-nav .dropdown-item {
   color: #0695d6;
 }
@@ -144,7 +141,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 60vh;
+  height: 40vh;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -152,7 +149,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   .el-imipp .el-imipp-img-container {
     padding-right: 25px;
     padding-left: 25px;
-    text-align: center;
+    text-align: end;
   }
   .el-imipp .el-imipp-img {
     width: 80%;
@@ -189,6 +186,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .servicios .carta-servicios .btn {
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 50px !important;
 }
 
 .carta-index {
