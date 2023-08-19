@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/hover.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <script src="https://kit.fontawesome.com/fbdd9f8864.js" crossorigin="anonymous"></script>
     <title>IMIPP - Inicio</title>
 </head>
@@ -24,11 +25,11 @@
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item my-auto">
-                        <a class="nav-link hvr-underline-from-center active" href="#"><i class="fa-solid fa-house home-icon" style="color: #0696d6;"></i>INICIO</a>
+                        <a class="nav-link hvr-underline-from-center active" href="#"><i class="fa-solid fa-house home-icon"></i>INICIO</a>
                     </li>
                     <p class="my-auto barra">|</p>
                     <li class="nav-item my-auto text-center">
-                        <a class="nav-link hvr-underline-from-center" href="./pages/lineasdeinvestigacion.html">NOSOTROS</a>
+                        <a class="nav-link hvr-underline-from-center" href="#">INSTITUCIONAL</a>
                     </li>
                     <p class="my-auto barra">|</p>
                     <li class="nav-item my-auto text-center">
@@ -52,7 +53,7 @@
     </nav>
     <main>
         <section class="header">
-            <div class="titulo rounded col-10 col-sm-8 col-md-6 col-lg-4">
+            <div class="titulo rounded col-10 col-sm-8 col-md-6 col-lg-4" data-aos="fade-in">
                 <h1 class="fw-bold">IMIPP</h1>
                 <h2>Instituto Multidisciplinario de Investigaciones en Patologías Pediátricas</h2>
             </div>
@@ -67,7 +68,7 @@
                     <p>El <span class="resaltar">Instituto Multidisciplinario de Investigaciones en Patologías Pediátricas (IMIPP)</span> es una <span class="subrayar">unidad ejecutora</span> del <span class="resaltar">Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET)</span> creado el 14/7/2015 en el marco del convenio entre el CONICET y el Ministerio de Salud del Gobierno de la Ciudad de Buenos Aires. La primera Directora del IMIPP es la Dra. María Victoria Preciado desde 28/12/2017.<br>El IMIPP funciona junto con la <span class="subrayar">División Patología</span>, el <span class="subrayar">Laboratorio de Parasitología y Chagas</span> y el <span class="subrayar">Servicio de Inmunología</span>, todos ellos en el edificio del Pabellón Q del <span class="resaltar">Hospital de Niños “Dr. Ricardo Gutiérrez”</span> (HNRG) en de la Ciudad de Buenos Aires.</p>
                     </p>
                 </div>
-                <div class="col-12 col-lg-6 my-auto el-imipp-img-container">
+                <div class="col-12 col-lg-6 my-auto el-imipp-img-container" data-aos="fade-left">
                     <img src="./assets/img/el-imipp.jpg" alt="pipeteo" class="el-imipp-img">
                 </div>
             </div>
@@ -81,9 +82,9 @@
                     <h3>Servicios</h3>
                 </div>
                 <div class="row row-cols-1 row-cols-lg-3 g-4">
-                    <div class="col">
+                    <div class="col" data-aos="fade-right">
                         <div class="carta-servicios">
-                            <img src="./assets/img/el-imipp.jpg" alt="">
+                            <img src="./assets/img/FISH.jpg" alt="">
                             <div class="carta-texto">
                                 <div>
                                     <h5>Hibridación In Situ</h5>
@@ -93,9 +94,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-in">
                         <div class="carta-servicios">
-                            <img src="./assets/img/el-imipp.jpg" alt="">
+                            <img src="./assets/img/IHQ.jpg" alt="">
                             <div class="carta-texto">
                                 <div>
                                     <h5>Inmunohistoquímica</h5>
@@ -105,9 +106,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-left">
                         <div class="carta-servicios">
-                            <img src="./assets/img/el-imipp.jpg" alt="">
+                            <img src="./assets/img/sanger.jpg" alt="">
                             <div class="carta-texto">
                                 <div>
                                     <h5>Secuenciación Sanger</h5>
@@ -121,40 +122,60 @@
                 <div class="line my-5"></div>
             </div>
         </section>
-        <section class="container mb-3">
+        <section class="container mb-3 presentacion">
+            <div class="row">
+                <div class="col-12">
+                    <p>Como Unidad Ejecutora de CONICET implantada en el Hospital de Niños Dr “Ricardo Gutiérrez”, dependiente del Gobierno de la Ciudad de Buenos Aires, el IMIPP centrará su misión en:
+                        <ul>
+                            <li>Promover el avance del conocimiento científico para mejorar la salud humana con especial énfasis en pediatría.</li>
+                            <li>Desarrollar investigación científica y técnica de excelencia en el área de la biomedicina con particular interés en los campos de virología, parasitología, patología e inmunología.</li>
+                            <li>Contribuir a la formación integral de investigadores, técnicos y profesionales del área biomédica.</li>
+                            <li>Trasladar los conocimientos y procesos así generados para fortalecer la vinculación del sistema científico-tecnológico con el sistema clínico-asistencial.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container mb-3 cartas-presentacion">
             <div class="row row-cols-1 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="carta-index">
-                        <img src="./assets/img/el-imipp.jpg" alt="">
-                        <div class="carta-texto">
-                            <div>
-                                <h5>Líneas de Investigación</h5>
-                                <p>En el IMIPP se desarrollan 4 líneas de investigación troncales.</p>
+                <div class="col" data-aos="fade-right">
+                    <a href="">
+                        <div class="carta-index">
+                            <img src="./assets/img/lineas.jpg" alt="">
+                            <div class="carta-texto">
+                                <div>
+                                    <h5>Líneas de Investigación</h5>
+                                    <p>En el IMIPP se desarrollan 4 líneas de investigación troncales.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col">
-                    <div class="carta-index">
-                        <img src="./assets/img/el-imipp.jpg" alt="">
-                        <div class="carta-texto">
-                            <div>
-                                <h5>Integrantes</h5>
-                                <p>Conoce a los Investigadores, Becarios y CPA que conforman al instituto.</p>
+                <div class="col" data-aos="fade-in">
+                    <a href="">
+                        <div class="carta-index">
+                            <img src="./assets/img/integrantes.jpg" alt="">
+                            <div class="carta-texto">
+                                <div>
+                                    <h5>Integrantes</h5>
+                                    <p>Conoce a los Investigadores, Becarios y CPA que conforman al instituto.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col">
-                    <div class="carta-index">
-                        <img src="./assets/img/el-imipp.jpg" alt="">
-                        <div class="carta-texto">
-                            <div>
-                                <h5>Seminarios</h5>
-                                <p>Ciclo de seminarios del Instituto.</p>
+                <div class="col" data-aos="fade-left">
+                    <a href="">
+                        <div class="carta-index">
+                            <img src="./assets/img/seminarios.jpg" alt="">
+                            <div class="carta-texto">
+                                <div>
+                                    <h5>Seminarios</h5>
+                                    <p>Ciclo de seminarios del Instituto.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="line"></div>
@@ -164,18 +185,18 @@
         <div class="row">
             <h3>Contacto</h3>
         </div>
-        <div class="row mb-4">
+        <div class="row mb-4" data-aos="fade-in">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13137.498908478254!2d-58.4122362!3d-34.5946div!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb461565531d%3A0x30532fa7a7c8a200!2sIMIPP%20-%20CONICET!5e0!3m2!1sen!2sar!4v1691103159697!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa-footer my-auto">
             </iframe>
         </div>
     </section>
     <footer>
-        <div class="footer">
+        <div class="footer my-2">
             <div class="lista-mapa container">
                 <div class="row">
                     <div class="lista-footer col-12 col-md-8 col-lg-5 my-auto mx-auto">
                         <div class="logo-imipp-footer-container">
-                            <img src="./assets/img/logo-imipp.png" alt="logo imipp" class="logo-imipp-footer">
+                            <a href="#"><img src="./assets/img/logo-imipp.png" alt="logo imipp" class="logo-imipp-footer"></a>
                         </div>
                         <div class="item-footer">
                             <i class="fa-solid fa-location-dot my-auto me-2"></i>
@@ -201,24 +222,20 @@
                     </div>
                     <div class="col-12 col-md-8 col-lg-5 my-auto mx-auto">
                         <form class="my-3">
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <div class="form-group my-3">
+                                <input type="text" class="form-control" placeholder="Nombre y Apellido">
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Example select</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
+                            <div class="form-group my-3">
+                                <input type="email" class="form-control" placeholder="Mail">
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <div class="form-group my-3">
+                                <input type="text" class="form-control" placeholder="Asunto">
+                            </div>
+                            <div class="form-group my-3">
+                                <label for="exampleFormControlTextarea1">Su Mensaje</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                           </form>
                     </div>
                 </div>
@@ -229,7 +246,10 @@
             <p>Desarrollado por Juan Paladea</p>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
