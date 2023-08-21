@@ -156,6 +156,43 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     margin: 0 auto;
   }
 }
+.cartas-presentacion a {
+  text-decoration: none;
+  color: #212121;
+}
+.cartas-presentacion .carta-index {
+  height: 100%;
+  padding: 0;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.cartas-presentacion .carta-index:hover img {
+  height: 30vh;
+  transition: height 1s ease-in;
+}
+.cartas-presentacion .carta-index img {
+  width: 100%;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cartas-presentacion .carta-index .carta-texto {
+  text-align: justify;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cartas-presentacion .carta-index .carta-texto h5 {
+  font-weight: 600;
+}
+.cartas-presentacion .carta-index .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .servicios {
   margin: 20px 0;
 }
@@ -197,64 +234,115 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   padding-bottom: 10px;
 }
 
-.cartas-presentacion a {
-  text-decoration: none;
-  color: #212121;
-}
-.cartas-presentacion .carta-index {
-  height: 100%;
-  padding: 0;
-  border: 1px solid #212121;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-}
-.cartas-presentacion .carta-index:hover img {
-  height: 30vh;
-  transition: height 1s ease-in;
-}
-.cartas-presentacion .carta-index img {
-  width: 100%;
-  height: 20vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.cartas-presentacion .carta-index .carta-texto {
-  text-align: justify;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.cartas-presentacion .carta-index .carta-texto h5 {
-  font-weight: 600;
-}
-.cartas-presentacion .carta-index .btn {
-  width: -moz-fit-content;
-  width: fit-content;
+.lineasdeinvestigacion-main {
+  margin: 0 50px;
 }
 
-.lineas {
+@media screen and (max-width: 992px) {
+  .lineasdeinvestigacion-main {
+    margin: 0;
+  }
+}
+.grupos {
   text-align: justify;
   line-height: 250%;
 }
-.lineas .lineas-texto {
+.grupos .grupos-texto {
   font-weight: 500;
 }
-.lineas .lineas-texto p {
+.grupos .grupos-texto p, .grupos .grupos-texto ul, .grupos .grupos-texto li {
   padding-bottom: 10px;
 }
-.lineas .lineas-texto h3 {
-  font-size: 1.5rem;
-  margin: 1rem 0;
-}
-.lineas .lineas-img {
+.grupos .lineas-img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 992px) {
+  .grupos .el-imipp-img-container {
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: end;
+  }
+  .grupos .lineas-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.detalle-grupos .borde {
+  margin-bottom: 100px;
+  border: 1px solid #212121;
+}
+.detalle-grupos .carta-grupos {
+  height: 100%;
+  padding: 0;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.detalle-grupos .carta-grupos img {
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.detalle-grupos .carta-grupos .carta-texto {
+  text-align: justify;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detalle-grupos .carta-grupos .carta-texto h5 {
+  font-weight: 600;
+}
+.detalle-grupos .carta-grupos .carta-texto p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .detalle-grupos .carta-grupos {
+    flex-direction: column;
+  }
+  .detalle-grupos .carta-grupos img {
+    margin: 10px auto;
+  }
+}
+.integrantes-main {
+  margin: 0 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .integrantes-main {
+    margin: 0;
+  }
+}
+.integrantes {
+  text-align: justify;
+  line-height: 250%;
+}
+.integrantes .integrantes-texto {
+  font-weight: 500;
+}
+.integrantes .integrantes-texto p, .integrantes .integrantes-texto ul, .integrantes .integrantes-texto li {
+  padding-bottom: 10px;
+}
+
+.integrantes-img {
+  height: 50vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 992px) {
+  .integrantes-img {
+    height: 100%;
+  }
+}
 .mapa-footer {
   height: 30vh;
   width: 100%;

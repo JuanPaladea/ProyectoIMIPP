@@ -1,19 +1,82 @@
-.lineas {
+.lineasdeinvestigacion-main {
+    margin: 0 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .lineasdeinvestigacion-main {
+        margin: 0;
+    }
+}
+
+.grupos {
     text-align: justify;
     line-height: 250%;
-    .lineas-texto {
+    .grupos-texto {
         font-weight: 500;
-        p {
+        p, ul, li {
             padding-bottom: 10px;
-        }
-        h3 {
-            font-size: 1.5rem;
-            margin: 1rem 0;
         }
     }
     .lineas-img {
         width: 100%;
         object-fit: cover;
         box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .grupos {
+        .el-imipp-img-container {
+            padding-right: 25px;
+            padding-left: 25px;
+            text-align: end;
+        }
+        .lineas-img {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.detalle-grupos {
+    .borde {
+        margin-bottom: 100px;
+        border: 1px solid $--dark-text-color;
+    }
+    .carta-grupos {
+        height: 100%;
+        padding: 0;
+        border: 1px solid $--dark-text-color;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 30%;
+            object-fit: cover;
+        }
+        .carta-texto {
+            text-align: justify;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h5 {
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .detalle-grupos {
+        .carta-grupos {
+            flex-direction: column;
+            img {
+                margin: 10px auto;
+            }
+        }
     }
 }

@@ -37,45 +37,6 @@
     }
 }
 
-.servicios {
-    margin: 20px 0;
-    .carta-servicios {
-        height: 100%;
-        padding: 0;
-        border: 1px solid $--dark-text-color;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row;
-        img {
-            width: 30%;
-            object-fit: cover;
-        }
-        .carta-texto {
-            text-align: justify;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            h5 {
-                font-weight: 600;
-            }
-        }
-        .btn {
-            width: fit-content;
-            margin-top: 50px !important;
-        }
-    }
-}
-
-.presentacion {
-    text-align: justify;
-    line-height: 250%;
-    font-weight: 500;
-    p {
-        padding-bottom: 10px;
-    }
-}
-
 .cartas-presentacion {
     a {
         text-decoration: none;
@@ -112,5 +73,44 @@
         .btn {
             width: fit-content;
         }
+    }
+}
+
+.servicios {
+    margin: 20px 0;
+    .carta-servicios {
+        height: 100%;
+        padding: 0;
+        border: 1px solid $--dark-text-color;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        img {
+            width: 30%;
+            object-fit: cover;
+        }
+        .carta-texto {
+            text-align: justify;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h5 {
+                font-weight: 600;
+            }
+        }
+        .btn {
+            width: fit-content;
+            margin-top: 50px !important;
+        }
+    }
+}
+
+.presentacion {
+    text-align: justify;
+    line-height: 250%;
+    font-weight: 500;
+    p {
+        padding-bottom: 10px;
     }
 }
