@@ -368,10 +368,17 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   flex-direction: column;
   justify-content: space-between;
 }
-.servicios-page .carta-servicios-page .btn {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-top: 50px !important;
+.servicios-page .carta-servicios-page .carta-texto-page h3 {
+  font-size: 1.5rem;
+}
+.servicios-page .carta-servicios-page .carta-texto-page h4 {
+  font-size: 1.2rem;
+}
+.servicios-page .carta-servicios-page .carta-texto-page h5 {
+  font-size: 1.2rem;
+}
+.servicios-page .carta-servicios-page .carta-texto-page p {
+  margin: 10px 0;
 }
 
 .mapa-footer {
