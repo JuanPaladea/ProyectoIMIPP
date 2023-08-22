@@ -39,8 +39,12 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   background-color: #BBDEFB;
 }
 
+.borde-claro {
+  border: 2px solid #BBDEFB;
+}
+
 .navbar {
-  z-index: 2;
+  z-index: 5;
   padding: 0.5rem 1rem;
   position: sticky;
   top: 0;
@@ -177,10 +181,17 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   height: 20vh;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 1;
 }
 .cartas-presentacion .carta-index .carta-texto {
+  position: relative;
+  border-top: 1px solid black;
+  border-radius: 15px 15px 0 0;
+  background-color: #f8f9fa;
+  bottom: 25px;
+  z-index: 2;
   text-align: justify;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -350,7 +361,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   height: 100%;
   padding: 0;
   border: 1px solid #212121;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -362,6 +372,12 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   border-radius: 0 0 20px 20px;
 }
 .servicios-page .carta-servicios-page .carta-texto-page {
+  position: relative;
+  border-top: 1px solid black;
+  border-radius: 15px 15px 0 0;
+  background-color: #f8f9fa;
+  bottom: 35px;
+  z-index: 2;
   text-align: justify;
   padding: 10px;
   display: flex;
