@@ -205,6 +205,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
+  transition: height 0.3s ease-in;
 }
 .cartas-presentacion .carta-index:hover img {
   height: 30vh;

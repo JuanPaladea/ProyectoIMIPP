@@ -52,6 +52,7 @@
             height: 20vh;
             object-fit: cover;
             z-index: 1;
+            transition: height 0.3s ease-in;
         }
         &:hover {
             img {
