@@ -38,6 +38,30 @@
     }
 }
 
+.carta-lineas {
+    height: 100%;
+    padding: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    img {
+        height: 20vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .carta-texto {
+        text-align: justify;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h5 {
+            font-weight: 600;
+            line-height: 250%;
+        }
+    }
+}
+
 .detalle-grupos {
     .borde {
         margin-bottom: 100px;

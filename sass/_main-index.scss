@@ -19,7 +19,6 @@
         width: 100%;
         object-fit: cover;
         height: 40vh;
-        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
     }
 }
 
@@ -45,7 +44,6 @@
     .carta-index {
         height: 100%;
         padding: 0;
-        border: 1px solid $--dark-text-color;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -63,7 +61,6 @@
         }
         .carta-texto {
             position: relative;
-            border-top: 1px solid black;
             border-radius: 15px 15px 0 0;
             background-color: #f8f9fa;
             bottom: 25px;
@@ -88,7 +85,6 @@
     .carta-servicios {
         height: 100%;
         padding: 0;
-        border: 1px solid $--dark-text-color;
         border-radius: 5px;
         display: flex;
         flex-direction: row;
@@ -105,10 +101,6 @@
             h5 {
                 font-weight: 600;
             }
-        }
-        .btn {
-            width: fit-content;
-            margin-top: 50px !important;
         }
     }
 }

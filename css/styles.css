@@ -20,6 +20,12 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 .line {
   height: 1px;
+  border-bottom: 2px solid #1976d2;
+  margin: 10px 0;
+}
+
+.line-black {
+  height: 1px;
   border-bottom: 1px solid black;
   margin: 10px 0;
 }
@@ -41,6 +47,25 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 .borde-claro {
   border: 2px solid #BBDEFB;
+}
+
+.sombra {
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.boton {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #1976d2;
+  color: #FFFFFF;
+}
+.boton:hover {
+  background-color: #194ad2;
+  transition: background-color 0.3s ease-in;
 }
 
 .navbar {
@@ -146,7 +171,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   -o-object-fit: cover;
      object-fit: cover;
   height: 40vh;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 992px) {
@@ -167,7 +191,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .cartas-presentacion .carta-index {
   height: 100%;
   padding: 0;
-  border: 1px solid #212121;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -185,7 +208,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 .cartas-presentacion .carta-index .carta-texto {
   position: relative;
-  border-top: 1px solid black;
   border-radius: 15px 15px 0 0;
   background-color: #f8f9fa;
   bottom: 25px;
@@ -210,7 +232,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .servicios .carta-servicios {
   height: 100%;
   padding: 0;
-  border: 1px solid #212121;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -229,11 +250,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 .servicios .carta-servicios .carta-texto h5 {
   font-weight: 600;
-}
-.servicios .carta-servicios .btn {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-top: 50px !important;
 }
 
 .presentacion {
@@ -282,6 +298,31 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     margin: 0 auto;
   }
 }
+.carta-lineas {
+  height: 100%;
+  padding: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.carta-lineas img {
+  height: 20vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carta-lineas .carta-texto {
+  text-align: justify;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carta-lineas .carta-texto h5 {
+  font-weight: 600;
+  line-height: 250%;
+}
+
 .detalle-grupos .borde {
   margin-bottom: 100px;
   border: 1px solid #212121;

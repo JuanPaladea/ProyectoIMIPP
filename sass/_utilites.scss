@@ -4,9 +4,16 @@
 
 .line {
     height: 1px;
+    border-bottom: 2px solid $--dark-primary-color;
+    margin: 10px 0;
+}
+
+.line-black {
+    height: 1px;
     border-bottom: 1px solid black;
     margin: 10px 0;
 }
+
 
 @media screen and (min-width: 992px) {
     .escondida {
@@ -26,4 +33,22 @@
 
 .borde-claro {
     border: 2px solid $--light-primary-color;
+}
+
+.sombra {
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
+}
+
+.boton {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: fit-content;
+    background-color: $--dark-primary-color;
+    color: $--light-text-color;
+    &:hover {
+        background-color: $--dark-primary-color-hover;
+        transition: background-color 0.3s ease-in;
+    }
 }
