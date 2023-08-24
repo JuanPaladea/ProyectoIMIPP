@@ -57,6 +57,10 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
+.texto-secundario {
+  color: #757575;
+}
+
 .boton {
   border: none;
   padding: 8px 15px;
@@ -66,10 +70,10 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   width: fit-content;
   background-color: #1976d2;
   color: #FFFFFF;
+  transition: background-color 0.3s ease-in;
 }
 .boton:hover {
   background-color: #194ad2;
-  transition: background-color 0.3s ease-in;
 }
 
 .navbar {
@@ -141,15 +145,11 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 @media screen and (min-width: 992px) {
   .header {
+    background-position: right;
     margin: 50px 100px;
   }
   .header .titulo {
     margin-right: 35vw;
-  }
-}
-@media screen and (max-width: 992px) {
-  .header {
-    background-position: left;
   }
 }
 .el-imipp-header {
