@@ -76,13 +76,13 @@
     .carta-grupos {
         height: 100%;
         padding: 0;
-        border: 1px solid $--dark-text-color;
         border-radius: 5px;
         display: flex;
         flex-direction: row;
         img {
             width: 30%;
             object-fit: cover;
+            border-radius: 10px;
         }
         .carta-texto {
             text-align: justify;

@@ -3,7 +3,6 @@
     .carta-servicios-page {
         height: 100%;
         padding: 0;
-        border: 1px solid $--dark-text-color;
         display: flex;
         flex-direction: column;
         img {
@@ -14,7 +13,6 @@
         }
         .carta-texto-page {
             position: relative;
-            border-top: 1px solid black;
             border-radius: 15px 15px 0 0;
             background-color: #f8f9fa;
             bottom: 35px;
