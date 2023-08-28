@@ -371,18 +371,67 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   margin-bottom: 100px;
   border: 1px solid #212121;
 }
+.detalle-grupos .header-lineas {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.detalle-grupos .header-lineas h3 {
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0);
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-decoration-color: #1976d2;
+}
+.detalle-grupos .chagas {
+  background-image: url(../assets/img/chagas-lg.jpg);
+}
+.detalle-grupos .sifilis {
+  background-image: url(../assets/img/sifilis-lg.jpg);
+}
+.detalle-grupos .ebv {
+  background-image: url(../assets/img/ebv-lg.jpg);
+}
+.detalle-grupos .hepatitis {
+  background-image: url(../assets/img/hepatitis-lg.png);
+}
+.detalle-grupos .tumores {
+  background-image: url(../assets/img/tumores-lg.jpg);
+}
+.detalle-grupos p {
+  font-size: 18px;
+  text-align: justify;
+}
 .detalle-grupos .carta-grupos {
-  padding: 0;
+  border: 1px #0695d6 solid;
+  padding: 10px;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
 }
-.detalle-grupos .carta-grupos img {
-  height: 100%;
-  width: 25%;
+.detalle-grupos .carta-grupos .grupos-imagen {
+  margin: auto 0;
+}
+.detalle-grupos .carta-grupos .grupos-imagen img {
+  margin: auto 0;
+  height: 25vh;
+  width: 25vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+.detalle-grupos .carta-grupos .grupos-imagen div i {
+  color: #212121;
+  margin: 0 5px;
+  transition: color ease-in 0.3s;
+}
+.detalle-grupos .carta-grupos .grupos-imagen div i:hover {
+  color: #0695d6;
 }
 .detalle-grupos .carta-grupos .carta-texto {
   width: 100%;
@@ -396,14 +445,14 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   font-weight: 600;
 }
 .detalle-grupos .carta-grupos .carta-texto p {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .detalle-grupos .carta-grupos {
     flex-direction: column;
   }
-  .detalle-grupos .carta-grupos img {
+  .detalle-grupos .carta-grupos .grupos-imagen {
     margin: 10px auto;
     width: 40%;
   }
@@ -450,19 +499,35 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   display: flex;
   flex-direction: column;
 }
-.servicios-page .carta-servicios-page img {
-  width: 100%;
+.servicios-page .carta-servicios-page .header-servicio {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 25vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0 0 20px 20px;
+}
+.servicios-page .carta-servicios-page .header-servicio h2 {
+  color: #FFFFFF;
+  padding: 1rem;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0);
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: #1976d2;
+}
+.servicios-page .carta-servicios-page .FISH {
+  background-image: url(../assets/img/FISH-lg.jpg);
+}
+.servicios-page .carta-servicios-page .IHQ {
+  background-image: url(../assets/img/ebv.jpg);
+}
+.servicios-page .carta-servicios-page .SANGER {
+  background-image: url(../assets/img/sanger-lg.jpg);
 }
 .servicios-page .carta-servicios-page .carta-texto-page {
-  position: relative;
-  border-radius: 15px 15px 0 0;
   background-color: #f8f9fa;
-  bottom: 35px;
-  z-index: 2;
   text-align: justify;
   padding: 10px;
   display: flex;

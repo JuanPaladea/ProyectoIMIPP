@@ -73,16 +73,62 @@
         margin-bottom: 100px;
         border: 1px solid $--dark-text-color;
     }
+    .header-lineas {
+        height: 20vh;
+        @include display-flex(row, center, center);
+        @include background-image(no-repeat, cover, center);
+        h3 {
+            color: $--light-text-color;
+            text-shadow: 1px 1px 0px rgba(0,0,0,1);
+            font-size: 2.5rem;
+            text-decoration: underline;
+            text-decoration-color: $--dark-primary-color;
+        }
+    }
+    .chagas {
+        background-image: url(../assets/img/chagas-lg.jpg);
+    }
+    .sifilis {
+        background-image: url(../assets/img/sifilis-lg.jpg);
+    }
+    .ebv {
+        background-image: url(../assets/img/ebv-lg.jpg);
+    }
+    .hepatitis {
+        background-image: url(../assets/img/hepatitis-lg.png);
+    }
+    .tumores {
+        background-image: url(../assets/img/tumores-lg.jpg);
+    }
+    p {
+        font-size: 18px;
+        text-align: justify;
+    }
     .carta-grupos {
-        padding: 0;
+        border: 1px $--primary-color solid;
+        padding: 10px;
         border-radius: 5px;
         display: flex;
         flex-direction: row;
-        img {
-            height: 100%;
-            width: 25%;
-            object-fit: cover;
-            border-radius: 10px;
+        .grupos-imagen {
+            margin: auto 0;
+            img {
+                margin: auto 0;
+                height: 25vh;
+                width: 25vh;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            div {
+                i {
+                    color: $--dark-text-color;
+                    margin: 0 5px;
+                    transition: color ease-in 0.3s;
+                    &:hover {
+                        color: $--primary-color;
+                    }
+                }
+            }
         }
         .carta-texto {
             width: 100%;
@@ -95,7 +141,7 @@
                 font-weight: 600;
             }
             p {
-                font-size: 14px;
+                font-size: 20px;
             }
         }
     }
@@ -105,7 +151,7 @@
     .detalle-grupos {
         .carta-grupos {
             flex-direction: column;
-            img {
+            .grupos-imagen {
                 margin: 10px auto;
                 width: 40%;
             }
