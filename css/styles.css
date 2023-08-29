@@ -550,10 +550,11 @@ h3, h4, h5 {
   font-size: 1.5rem;
 }
 .servicios-page .carta-servicios-page .carta-texto-page h4, .servicios-page .carta-servicios-page .carta-texto-page h5 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .servicios-page .carta-servicios-page .carta-texto-page p {
   margin: 10px 0;
+  font-size: 1.2rem;
 }
 
 .mapa-footer {
