@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   font-family: "Inter", sans-serif;
 }
 
+h3, h4, h5 {
+  font-size: 2rem;
+}
+
 .active {
   font-weight: 900;
 }
@@ -163,9 +167,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .el-imipp .el-imipp-texto {
   font-weight: 500;
 }
-.el-imipp .el-imipp-texto p {
-  padding-bottom: 10px;
-}
 .el-imipp .el-imipp-texto h3 {
   font-size: 1.5rem;
   margin: 1rem 0;
@@ -195,7 +196,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .cartas-presentacion .carta-index {
   height: 100%;
   padding: 0;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -224,6 +224,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 .cartas-presentacion .carta-index .carta-texto h5 {
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .servicios {
@@ -250,6 +251,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 }
 .servicios .carta-servicios .carta-texto h5 {
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .presentacion {
@@ -356,15 +358,18 @@ h1, h2, h3, h4, h5, h6, p, a, li {
      object-fit: cover;
 }
 .carta-lineas .carta-texto {
-  text-align: justify;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .carta-lineas .carta-texto h5 {
-  font-weight: 600;
-  line-height: 250%;
+  line-height: 150%;
+  font-size: 1.4rem;
+}
+.carta-lineas .carta-texto p {
+  line-height: 200%;
+  text-align: justify;
 }
 
 .detalle-grupos .borde {
@@ -385,6 +390,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   color: #FFFFFF;
   text-shadow: 1px 1px 0px rgb(0, 0, 0);
   font-size: 2.5rem;
+  font-weight: bold;
   text-decoration: underline;
   text-decoration-color: #1976d2;
 }
@@ -404,8 +410,9 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   background-image: url(../assets/img/tumores-lg.jpg);
 }
 .detalle-grupos p {
-  font-size: 18px;
+  font-size: 1.2rem;
   text-align: justify;
+  line-height: 200%;
 }
 .detalle-grupos .carta-grupos {
   border: 1px #0695d6 solid;
@@ -415,12 +422,13 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   flex-direction: row;
 }
 .detalle-grupos .carta-grupos .grupos-imagen {
-  margin: auto 0;
+  margin: auto;
+  width: 225px !important;
 }
 .detalle-grupos .carta-grupos .grupos-imagen img {
-  margin: auto 0;
-  height: 25vh;
-  width: 25vh;
+  margin: auto;
+  height: 225px;
+  width: 225px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -441,11 +449,15 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   flex-direction: column;
   justify-content: space-between;
 }
+.detalle-grupos .carta-grupos .carta-texto h4 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
 .detalle-grupos .carta-grupos .carta-texto h5 {
-  font-weight: 600;
+  font-size: 1.3rem;
 }
 .detalle-grupos .carta-grupos .carta-texto p {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -537,10 +549,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .servicios-page .carta-servicios-page .carta-texto-page h3 {
   font-size: 1.5rem;
 }
-.servicios-page .carta-servicios-page .carta-texto-page h4 {
-  font-size: 1.2rem;
-}
-.servicios-page .carta-servicios-page .carta-texto-page h5 {
+.servicios-page .carta-servicios-page .carta-texto-page h4, .servicios-page .carta-servicios-page .carta-texto-page h5 {
   font-size: 1.2rem;
 }
 .servicios-page .carta-servicios-page .carta-texto-page p {
@@ -556,29 +565,29 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   height: 75px;
   width: auto;
 }
-.footer .lista-mapa .lista-footer .item-footer {
+.footer .item-footer {
   margin: 15px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.footer .lista-mapa .lista-footer .item-footer > p, .footer .lista-mapa .lista-footer .item-footer a {
+.footer .item-footer > p, .footer .item-footer a {
   color: #212121;
   text-decoration: none;
   margin-left: 10px;
   font-size: 1.2rem;
 }
-.footer .lista-mapa .lista-footer .item-footer > a:hover {
+.footer .item-footer > a:hover {
   text-decoration: underline;
 }
-.footer .lista-mapa .lista-footer .item-footer > i {
+.footer .item-footer > i {
   width: 20px;
   height: 20px;
   text-align: center;
   margin: 0;
 }
-.footer .lista-mapa .lista-footer .item-footer .instagram-logo {
+.footer .item-footer .instagram-logo {
   height: 20px;
   width: auto;
 }
@@ -592,4 +601,5 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   background-color: #1976d2;
   color: #FFFFFF;
   padding: 0 2rem;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=styles.css.map */
