@@ -211,6 +211,7 @@ h3, h4, h5 {
   height: 30vh;
 }
 .cartas-presentacion .carta-index .carta-texto {
+  width: 100%;
   position: relative;
   border-radius: 15px 15px 0 0;
   background-color: #f8f9fa;
@@ -251,7 +252,7 @@ h3, h4, h5 {
 }
 .servicios .carta-servicios .carta-texto h5 {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .presentacion {
